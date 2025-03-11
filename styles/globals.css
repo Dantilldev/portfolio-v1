@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sofia+Sans:wght@400;600;700&display=swap");
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Använd Sofia Sans för kroppstext */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+/* Använd Bebas Neue för rubriker */
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* Lägg till globala stilar för header och footer */
+header,
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
 }
